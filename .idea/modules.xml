@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../asm-master/asm.iml" filepath="$PROJECT_DIR$/../asm-master/asm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvmdemo.iml" filepath="$PROJECT_DIR$/jvmdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../slothlog-master/slothlog.iml" filepath="$PROJECT_DIR$/../slothlog-master/slothlog.iml" />
+    </modules>
+  </component>
+</project>

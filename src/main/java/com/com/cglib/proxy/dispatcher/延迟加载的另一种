@@ -1,0 +1,11 @@
+实战CGLib系列文章
+
+本篇介绍改进版延迟加载器Dispatcher。
+
+一、作用：
+
+上一篇文章中，介绍了延迟加载器LazyLoader。本篇介绍另一种延迟加载接口Dispatcher。
+
+Dispatcher接口同样继承于Callback，也是一种回调类型。
+
+但是Dispatcher和LazyLoader的区别在于：LazyLoader只在第一次访问延迟加载属性时触发代理类回调方法，而Dispatcher在每次访问延迟加载属性时都会触发代理类回调方法。

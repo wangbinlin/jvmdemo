@@ -1,0 +1,14 @@
+实战CGLib系列文章
+
+本篇介绍接口生成器InterfaceMaker。
+
+一、作用：
+
+InterfaceMaker会动态生成一个接口，该接口包含指定类定义的所有方法。
+
+二、示例：
+
+比较简单，先定义一个类，仍使用本系列第一篇中的那个ConcreteClassNoInterface类，该类包含3个方法：
+
+
+此处让Object生成的代理类实现了由InterfaceMaker生成的接口，但是由于Object类并没有覆写其中的方法，因此，每当对生成接口内方法进行MethodInterceptor方法拦截时，都返回一个字符串，并在最后打印出来。

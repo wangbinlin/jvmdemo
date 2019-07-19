@@ -1,0 +1,14 @@
+本篇介绍回调过滤器CallbackFilter。
+
+一、作用
+
+在CGLib回调时可以设置对不同方法执行不同的回调逻辑，或者根本不执行回调。
+
+在JDK动态代理中并没有类似的功能，对InvocationHandler接口方法的调用对代理类内的所以方法都有效。
+
+
+ConcreteClassNoInterface  //被代理类
+ConcreteClassCallbackFilter //实现过滤器CallbackFilter的类
+    其中return值为被代理类的各个方法在回调数组Callback[]中的位置索引 Callback[] callbacks=new Callback[]{interceptor,noOp,fixedValue};
+ConcreteClassFixedValue  //实现锁定返回值FixedValue接口的类
+
